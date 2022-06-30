@@ -388,4 +388,77 @@ header {
     text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .self-information {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .self-introduce {
+    width: 100%;
+  }
+  .honest-design {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .honest-design img {
+    margin-bottom: 10px;
+  }
+  .work-experience {
+    padding: 0 15px;
+  }
+  .study-experience {
+    padding: 0 15px;
+  }
+  .study-experience .school-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .study-experience .school-list .ymca {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .study-experience .school-list .ymca img {
+    margin-bottom: 10px;
+  }
+  .study-experience .school-list .nkuht {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .study-experience .school-list .nkuht img {
+    margin-bottom: 10px;
+  }
+  .join-rocket {
+    padding: 0 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .join-rocket img {
+    margin-bottom: 10px;
+  }
+  .skills {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills .skill {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .skills .skill h3 {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */

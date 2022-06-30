@@ -248,3 +248,62 @@ header{
         }
     }
 }
+@media (max-width:768px) {
+    header{
+        flex-wrap: wrap;
+    }
+    .self-information{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .self-introduce{
+        width: 100%;
+    }
+    .honest-design{
+        flex-wrap: wrap;
+        img{
+            margin-bottom: 10px;
+        }
+    }
+    .work-experience{
+        padding: 0 15px;
+    }
+    .study-experience{
+        padding: 0 15px;
+        .school-list{
+            flex-wrap: wrap;
+            .ymca{
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: 20px;
+                img{
+                    margin-bottom: 10px;
+                }
+            }
+            .nkuht{
+                width: 100%;
+                flex-direction: column;
+                img{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .join-rocket{
+        padding: 0 15px;
+        flex-direction: column;
+        img{
+            margin-bottom: 10px;
+        }
+    }
+    .skills{
+        flex-wrap: wrap;
+        .skill{
+            width: 100%;
+            margin-bottom: 25px;
+            h3{
+                text-align: center;
+            }
+        }
+    }
+}
