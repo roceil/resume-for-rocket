@@ -1,0 +1,250 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 35px 20px 20px 20px;
+    margin-bottom: 50px !important;
+}
+.self-information{
+    text-align: center;
+    width: 30%;
+    img{
+        border-radius: 100%;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    h1{
+        color: white;
+        font-size: $fs-27;
+        line-height: $lh-40;
+        font-weight: bold;
+        margin-bottom:5px;
+    }
+    sub{
+        color: #cccccc;
+        font-size: $fs-18;
+        line-height: $lh-28;
+    }
+    p{
+        color: white;
+        font-size: $fs-17;
+        line-height: $lh-25;
+    }
+}
+.self-introduce{
+    width: 60%;
+    p{
+        color: white;
+        font-size: $fs-17;
+        line-height: $lh-25;
+        margin-bottom: 10px;
+    }
+    .icons{
+        display: flex;
+        img{
+            width: 40px;
+            margin-right: 10px;
+            background-color: white;
+            border-radius: 100%;
+        }
+    }
+}
+.work-experience{
+    margin-bottom: 60px;
+    h2{
+        font-size: $fs-23;
+        line-height: $lh-35;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .honest-design{
+        display: flex;
+        img{
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+        }
+        .h3{
+            font-size: $fs-20;
+            line-height: $lh-30;
+            font-weight: bolder;
+            margin-bottom: 10px;
+        }
+        .date{
+            color: #888888;
+            font-size: $fs-17;
+            line-height: $lh-25;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: $fs-18;
+            line-height: $lh-25;
+            color: #555555;
+        }
+    }
+
+}
+.study-experience{
+    margin-bottom: 60px;
+    h2{
+        font-size: $fs-23;
+        line-height: $lh-35;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .school-list{
+        display: flex;
+        .ymca{
+            width: 50%;
+            display: flex;
+            img{
+                width: 60px;
+                height: 60px;
+                margin-right: 20px;
+            }
+            .date{
+                color: #888888;
+                font-size: $fs-17;
+                line-height: $lh-25;
+            }
+            h3{
+                color:#333333;
+                font-size: $fs-20;
+                line-height: $lh-30;
+            }
+            p{
+                color: #000695;
+                font-size: $fs-18;
+                line-height: $lh-28;
+            }
+        }
+        .nkuht{
+            display: flex;
+            width: 50%;
+            img{
+                width: 60px;
+                height: 60px;
+                margin-right: 20px;
+            }
+            .date{
+                color: #888888;
+                font-size: $fs-17;
+                line-height: $lh-25;
+            }
+            h3{
+                color:#333333;
+                font-size: $fs-20;
+                line-height: $lh-30;
+            }
+            p{
+                color: #000695;
+                font-size: $fs-18;
+                line-height: $lh-28;
+            }
+        }
+    }
+}
+.join-rocket{
+    display: flex;
+    margin-bottom: 60px;
+    img{
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+    h2{
+        font-size: $fs-23;
+        line-height: $lh-35;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: $fs-17;
+        line-height: $lh-25;
+        color: #555555;
+    }
+}
+.skills{
+    background-color: black;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    .skill{
+        width: 30%;
+        h3{
+            font-size: $fs-23;
+            line-height: $lh-35;
+            color: white;
+        }
+        hr{
+            color: white;
+        }
+        li{
+            color: white;
+            font-size: $fs-17;
+            line-height: $lh-30;
+        }
+    }
+    
+}
+
+// RWD
+@media (max-width:390px) {
+    header{
+        flex-wrap: wrap;
+    }
+    .self-information{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .self-introduce{
+        width: 100%;
+    }
+    .honest-design{
+        flex-wrap: wrap;
+        img{
+            margin-bottom: 10px;
+        }
+    }
+    .work-experience{
+        padding: 0 15px;
+    }
+    .study-experience{
+        padding: 0 15px;
+        .school-list{
+            flex-wrap: wrap;
+            .ymca{
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: 20px;
+                img{
+                    margin-bottom: 10px;
+                }
+            }
+            .nkuht{
+                width: 100%;
+                flex-direction: column;
+                img{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .join-rocket{
+        padding: 0 15px;
+        flex-direction: column;
+        img{
+            margin-bottom: 10px;
+        }
+    }
+    .skills{
+        flex-wrap: wrap;
+        .skill{
+            width: 100%;
+            margin-bottom: 25px;
+            h3{
+                text-align: center;
+            }
+        }
+    }
+}

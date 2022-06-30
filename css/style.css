@@ -1,0 +1,391 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #F8F8F8;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+  padding: 35px 20px 20px 20px;
+  margin-bottom: 50px !important;
+}
+
+.self-information {
+  text-align: center;
+  width: 30%;
+}
+
+.self-information img {
+  border-radius: 100%;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.self-information h1 {
+  color: white;
+  font-size: 27px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.self-information sub {
+  color: #cccccc;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.self-information p {
+  color: white;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.self-introduce {
+  width: 60%;
+}
+
+.self-introduce p {
+  color: white;
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.self-introduce .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.self-introduce .icons img {
+  width: 40px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.work-experience {
+  margin-bottom: 60px;
+}
+
+.work-experience h2 {
+  font-size: 23px;
+  line-height: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.work-experience .honest-design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work-experience .honest-design img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.work-experience .honest-design .h3 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.work-experience .honest-design .date {
+  color: #888888;
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.work-experience .honest-design p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #555555;
+}
+
+.study-experience {
+  margin-bottom: 60px;
+}
+
+.study-experience h2 {
+  font-size: 23px;
+  line-height: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.study-experience .school-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.study-experience .school-list .ymca {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.study-experience .school-list .ymca img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.study-experience .school-list .ymca .date {
+  color: #888888;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.study-experience .school-list .ymca h3 {
+  color: #333333;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.study-experience .school-list .ymca p {
+  color: #000695;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.study-experience .school-list .nkuht {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.study-experience .school-list .nkuht img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.study-experience .school-list .nkuht .date {
+  color: #888888;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.study-experience .school-list .nkuht h3 {
+  color: #333333;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.study-experience .school-list .nkuht p {
+  color: #000695;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.join-rocket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.join-rocket img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.join-rocket h2 {
+  font-size: 23px;
+  line-height: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.join-rocket p {
+  font-size: 17px;
+  line-height: 25px;
+  color: #555555;
+}
+
+.skills {
+  background-color: black;
+  padding: 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills .skill {
+  width: 30%;
+}
+
+.skills .skill h3 {
+  font-size: 23px;
+  line-height: 35px;
+  color: white;
+}
+
+.skills .skill hr {
+  color: white;
+}
+
+.skills .skill li {
+  color: white;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+@media (max-width: 390px) {
+  header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .self-information {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .self-introduce {
+    width: 100%;
+  }
+  .honest-design {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .honest-design img {
+    margin-bottom: 10px;
+  }
+  .work-experience {
+    padding: 0 15px;
+  }
+  .study-experience {
+    padding: 0 15px;
+  }
+  .study-experience .school-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .study-experience .school-list .ymca {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .study-experience .school-list .ymca img {
+    margin-bottom: 10px;
+  }
+  .study-experience .school-list .nkuht {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .study-experience .school-list .nkuht img {
+    margin-bottom: 10px;
+  }
+  .join-rocket {
+    padding: 0 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .join-rocket img {
+    margin-bottom: 10px;
+  }
+  .skills {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills .skill {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .skills .skill h3 {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+// 字型大小
+$fs-17:17px;
+$fs-18:18px;
+$fs-20:20px;
+$fs-23:23px;
+$fs-27:27px;
+
+// 行高設定
+$lh-25:25px;
+$lh-28:28px;
+$lh-35:35px;
+$lh-30:30px;
+$lh-40:40px;
+
+.container{
+    max-width: 992px;
+    margin: 0 auto;
+}
+body{
+    background-color: #F8F8F8;
+}
+.border{
+    border: 1px solid black;
+}
