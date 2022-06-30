@@ -88,9 +88,9 @@ header {
 }
 
 .self-information img {
-  border-radius: 100%;
   width: 150px;
-  margin-bottom: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .self-information h1 {
@@ -99,6 +99,7 @@ header {
   line-height: 40px;
   font-weight: bold;
   margin-bottom: 5px;
+  margin-top: -30px;
 }
 
 .self-information sub {
@@ -141,17 +142,23 @@ header {
   margin-bottom: 60px;
 }
 
-.work-experience h2 {
+.work-experience .h2 {
   font-size: 23px;
   line-height: 35px;
   font-weight: bold;
-  margin-bottom: 20px;
+}
+
+.work-experience sub {
+  font-weight: bold;
+  margin-left: 5px;
+  color: #A00504;
 }
 
 .work-experience .honest-design {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 20px;
 }
 
 .work-experience .honest-design img {
@@ -184,17 +191,23 @@ header {
   margin-bottom: 60px;
 }
 
-.study-experience h2 {
+.study-experience .h2 {
   font-size: 23px;
   line-height: 35px;
   font-weight: bold;
-  margin-bottom: 20px;
+}
+
+.study-experience sub {
+  font-weight: bold;
+  margin-left: 5px;
+  color: #A00504;
 }
 
 .study-experience .school-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 20px;
 }
 
 .study-experience .school-list .ymca {
@@ -263,7 +276,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .join-rocket img {
@@ -283,6 +296,20 @@ header {
   font-size: 17px;
   line-height: 25px;
   color: #555555;
+}
+
+.rocket-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+.rocket-pic img {
+  width: 70%;
 }
 
 .skills {
@@ -314,79 +341,6 @@ header {
   color: white;
   font-size: 17px;
   line-height: 30px;
-}
-
-@media (max-width: 390px) {
-  header {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .self-information {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .self-introduce {
-    width: 100%;
-  }
-  .honest-design {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .honest-design img {
-    margin-bottom: 10px;
-  }
-  .work-experience {
-    padding: 0 15px;
-  }
-  .study-experience {
-    padding: 0 15px;
-  }
-  .study-experience .school-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .study-experience .school-list .ymca {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .study-experience .school-list .ymca img {
-    margin-bottom: 10px;
-  }
-  .study-experience .school-list .nkuht {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .study-experience .school-list .nkuht img {
-    margin-bottom: 10px;
-  }
-  .join-rocket {
-    padding: 0 15px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .join-rocket img {
-    margin-bottom: 10px;
-  }
-  .skills {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .skills .skill {
-    width: 100%;
-    margin-bottom: 25px;
-  }
-  .skills .skill h3 {
-    text-align: center;
-  }
 }
 
 @media (max-width: 768px) {
