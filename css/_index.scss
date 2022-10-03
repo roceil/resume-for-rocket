@@ -176,15 +176,27 @@ header {
     line-height: $lh-25;
     color: #555555;
   }
-}
-.rocket-pic {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
-  img {
-    width: 70%;
+  .rocket-pic{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    img{
+      width: 80%;
+      height: auto;
+      margin-right: -20px;
+    }
   }
 }
+// .rocket-pic {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 60px;
+//   img {
+//     width: 70%;
+//   }
+// }
 .skills {
   overflow-y: hidden;
   background-color: black;

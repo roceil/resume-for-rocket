@@ -255,14 +255,17 @@ header .container {
   line-height: 25px;
   color: #555555;
 }
-
-.rocket-pic {
+.join-rocket .rocket-pic {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
-.rocket-pic img {
-  width: 70%;
+.join-rocket .rocket-pic img {
+  width: 80%;
+  height: auto;
+  margin-right: -20px;
 }
 
 .skills {
