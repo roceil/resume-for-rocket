@@ -56,10 +56,6 @@ table {
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .container {
   max-width: 992px;
   margin: 0 auto;
