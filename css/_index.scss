@@ -189,20 +189,19 @@ header {
   }
   .rocket-pic{
     position: relative;
-    width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
     &::after{
       content: "";
       position: absolute;
-      top: 3%;
-      left: 7.7%;
+      top: 0px;
+      left: 50%;
       width: 80%;
       height: 100%;
       border: 1px solid gray;
       border-radius: 16px;
       z-index: -1;
+      transform: translate(-52%,3%);
     }
     img{
       width: 80%;
@@ -295,6 +294,11 @@ header {
     flex-direction: column;
     img {
       margin-bottom: 10px;
+    }
+    .rocket-pic{
+      &::after{
+        transform: translate(-56%,3%);
+      }
     }
   }
   .skills {
