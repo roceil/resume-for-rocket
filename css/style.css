@@ -56,6 +56,10 @@ table {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 992px;
   margin: 0 auto;
@@ -68,6 +72,35 @@ body {
 
 .border {
   border: 1px solid black;
+}
+
+.material-symbols-outlined {
+  font-size: 40px;
+  color: white;
+}
+
+.top {
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  width: 50px;
+  height: 50px;
+  background: black;
+  border: 1px solid white;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+  opacity: 0.5;
+}
+.top:hover {
+  opacity: 0.8;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -121,6 +154,13 @@ header .container {
 }
 .self-introduce .icons {
   display: flex;
+}
+.self-introduce .icons a {
+  opacity: 0.6;
+}
+.self-introduce .icons a:hover {
+  opacity: 1;
+  transition: 0.4s ease-in-out;
 }
 .self-introduce .icons img {
   width: 45px;
@@ -296,6 +336,7 @@ header .container {
 @media (max-width: 768px) {
   header {
     flex-wrap: wrap;
+    height: 100vh;
   }
   header .container {
     flex-direction: column;
@@ -310,6 +351,9 @@ header .container {
   .self-introduce .icons {
     justify-content: end;
     margin-top: 8px;
+  }
+  .self-introduce .icons a {
+    opacity: 1;
   }
   .honest-design {
     flex-wrap: wrap;
