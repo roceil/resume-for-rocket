@@ -43,7 +43,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -53,13 +53,17 @@ table {
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 992px;
   margin: 0 auto;
+  padding: 0 20px 0 20px;
 }
 
 body {
@@ -71,28 +75,24 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: black;
   padding: 35px 20px 20px 20px;
   margin-bottom: 50px !important;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .self-information {
   text-align: center;
   width: 30%;
 }
-
 .self-information img {
   width: 150px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .self-information h1 {
   color: white;
   font-size: 27px;
@@ -100,13 +100,11 @@ header {
   font-weight: bold;
   margin-bottom: 5px;
 }
-
 .self-information sub {
   color: #cccccc;
   font-size: 18px;
   line-height: 28px;
 }
-
 .self-information p {
   color: white;
   font-size: 17px;
@@ -115,23 +113,21 @@ header {
 
 .self-introduce {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .self-introduce p {
   color: white;
   font-size: 17px;
   line-height: 25px;
   margin-bottom: 10px;
 }
-
 .self-introduce .icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .self-introduce .icons img {
-  width: 40px;
+  width: 45px;
   margin-right: 10px;
   background-color: white;
   border-radius: 100%;
@@ -140,46 +136,37 @@ header {
 .work-experience {
   margin-bottom: 60px;
 }
-
 .work-experience .h2 {
   font-size: 23px;
   line-height: 35px;
   font-weight: bold;
 }
-
 .work-experience sub {
   font-weight: bold;
   margin-left: 5px;
   color: #A00504;
 }
-
 .work-experience .honest-design {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
-
 .work-experience .honest-design img {
   width: 60px;
   height: 60px;
   margin-right: 20px;
 }
-
 .work-experience .honest-design .h3 {
   font-size: 20px;
   line-height: 30px;
   font-weight: bolder;
   margin-bottom: 10px;
 }
-
 .work-experience .honest-design .date {
   color: #888888;
   font-size: 17px;
   line-height: 25px;
   margin-bottom: 10px;
 }
-
 .work-experience .honest-design p {
   font-size: 18px;
   line-height: 25px;
@@ -189,82 +176,63 @@ header {
 .study-experience {
   margin-bottom: 60px;
 }
-
 .study-experience .h2 {
   font-size: 23px;
   line-height: 35px;
   font-weight: bold;
 }
-
 .study-experience sub {
   font-weight: bold;
   margin-left: 5px;
   color: #A00504;
 }
-
 .study-experience .school-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
-
 .study-experience .school-list .ymca {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .study-experience .school-list .ymca img {
   width: 60px;
   height: 60px;
   margin-right: 20px;
 }
-
 .study-experience .school-list .ymca .date {
   color: #888888;
   font-size: 17px;
   line-height: 25px;
 }
-
 .study-experience .school-list .ymca h3 {
   color: #333333;
   font-size: 20px;
   line-height: 30px;
 }
-
 .study-experience .school-list .ymca p {
   color: #000695;
   font-size: 18px;
   line-height: 28px;
 }
-
 .study-experience .school-list .nkuht {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 50%;
 }
-
 .study-experience .school-list .nkuht img {
   width: 60px;
   height: 60px;
   margin-right: 20px;
 }
-
 .study-experience .school-list .nkuht .date {
   color: #888888;
   font-size: 17px;
   line-height: 25px;
 }
-
 .study-experience .school-list .nkuht h3 {
   color: #333333;
   font-size: 20px;
   line-height: 30px;
 }
-
 .study-experience .school-list .nkuht p {
   color: #000695;
   font-size: 18px;
@@ -272,25 +240,20 @@ header {
 }
 
 .join-rocket {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
 }
-
 .join-rocket img {
   width: 60px;
   height: 60px;
   margin-right: 20px;
 }
-
 .join-rocket h2 {
   font-size: 23px;
   line-height: 35px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 .join-rocket p {
   font-size: 17px;
   line-height: 25px;
@@ -298,15 +261,10 @@ header {
 }
 
 .rocket-pic {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 60px;
 }
-
 .rocket-pic img {
   width: 70%;
 }
@@ -314,28 +272,21 @@ header {
 .skills {
   background-color: black;
   padding: 20px 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
+  text-align: center;
 }
-
 .skills .skill {
   width: 30%;
 }
-
 .skills .skill h3 {
   font-size: 23px;
   line-height: 35px;
   color: white;
 }
-
 .skills .skill hr {
   color: white;
 }
-
 .skills .skill li {
   color: white;
   font-size: 17px;
@@ -344,8 +295,10 @@ header {
 
 @media (max-width: 768px) {
   header {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  header .container {
+    flex-direction: column;
   }
   .self-information {
     width: 100%;
@@ -354,9 +307,12 @@ header {
   .self-introduce {
     width: 100%;
   }
+  .self-introduce .icons {
+    justify-content: end;
+    margin-top: 8px;
+  }
   .honest-design {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .honest-design img {
     margin-bottom: 10px;
@@ -368,14 +324,10 @@ header {
     padding: 0 15px;
   }
   .study-experience .school-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .study-experience .school-list .ymca {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -384,27 +336,20 @@ header {
   }
   .study-experience .school-list .nkuht {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .study-experience .school-list .nkuht img {
     margin-bottom: 10px;
   }
   .join-rocket {
     padding: 0 15px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .join-rocket img {
     margin-bottom: 10px;
   }
   .skills {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .skills .skill {
     width: 100%;
@@ -413,5 +358,4 @@ header {
   .skills .skill h3 {
     text-align: center;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

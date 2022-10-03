@@ -1,6 +1,8 @@
 header{
-    display: flex;
-    justify-content: space-between;
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
     background-color: black;
     padding: 35px 20px 20px 20px;
     margin-bottom: 50px !important;
@@ -32,6 +34,9 @@ header{
 }
 .self-introduce{
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     p{
         color: white;
         font-size: $fs-17;
@@ -41,7 +46,7 @@ header{
     .icons{
         display: flex;
         img{
-            width: 40px;
+            width: 45px;
             margin-right: 10px;
             background-color: white;
             border-radius: 100%;
@@ -186,6 +191,7 @@ header{
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
     .skill{
         width: 30%;
         h3{
@@ -209,6 +215,9 @@ header{
 @media (max-width:768px) {
     header{
         flex-wrap: wrap;
+        .container{
+            flex-direction: column;
+        }
     }
     .self-information{
         width: 100%;
@@ -216,6 +225,10 @@ header{
     }
     .self-introduce{
         width: 100%;
+        .icons{
+            justify-content: end;
+            margin-top: 8px;
+        }
     }
     .honest-design{
         flex-wrap: wrap;
