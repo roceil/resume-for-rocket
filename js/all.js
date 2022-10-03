@@ -14,9 +14,9 @@
 //   //     }
 //   // });
 // // });
-// $(document).ready(function () {
-//   $('.top').click(function(){
-//     anime/* 返回到最頂上 */
-//     return false;
-// });
-// });
+$(document).ready(function () {
+  $('.top').click(function(){
+    $('html,body').animate({ scrollTop: 0 },);/* 返回到最頂上 */
+    return false;
+});
+});
