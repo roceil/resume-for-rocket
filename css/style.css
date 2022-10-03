@@ -140,7 +140,7 @@ header .container {
 .work-experience sub {
   font-weight: bold;
   margin-left: 5px;
-  color: #A00504;
+  color: #a00504;
 }
 .work-experience .honest-design {
   display: flex;
@@ -180,7 +180,7 @@ header .container {
 .study-experience sub {
   font-weight: bold;
   margin-left: 5px;
-  color: #A00504;
+  color: #a00504;
 }
 .study-experience .school-list {
   display: flex;
@@ -266,6 +266,7 @@ header .container {
 }
 
 .skills {
+  overflow-y: hidden;
   background-color: black;
   padding: 20px 30px;
   display: flex;
