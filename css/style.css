@@ -277,7 +277,7 @@ header .container {
 
 .join-rocket {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 48px;
 }
 .join-rocket img {
   width: 60px;
@@ -294,18 +294,31 @@ header .container {
   font-size: 17px;
   line-height: 25px;
   color: #555555;
+  margin-bottom: 24px;
 }
 .join-rocket .rocket-pic {
+  position: relative;
   width: 100%;
   height: auto;
-  margin-top: 10px;
   display: flex;
   justify-content: center;
+}
+.join-rocket .rocket-pic::after {
+  content: "";
+  position: absolute;
+  top: 3%;
+  left: 7.7%;
+  width: 80%;
+  height: 100%;
+  border: 1px solid gray;
+  border-radius: 16px;
+  z-index: -1;
 }
 .join-rocket .rocket-pic img {
   width: 80%;
   height: auto;
   margin-right: 0;
+  border-radius: 16px;
 }
 
 .skills {
